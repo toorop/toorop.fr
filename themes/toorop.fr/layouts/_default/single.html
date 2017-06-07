@@ -1,0 +1,38 @@
+{{ define "title" }}{{ .Title }} - {{ end }}
+
+{{ define "meta" }}
+{{ range .AlternativeOutputFormats }}
+<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+{{ end }}
+{{ partial "single_meta.html" . }}
+{{ partial "single_json_ld.html" . }}
+{{ end }}
+
+{{ define "main" }}
+<div class="mrow">
+  <div class="mcol c12">
+
+    {{ .Render "summary" }}
+
+    <div class="adj">
+      <div class="mrow">
+        {{ with .Prev }}
+        <div class="mcol c6">
+          <header>Previous Article</header>
+          {{ .Render "li_sm" }}
+        </div>
+        {{ end }}
+        {{ with .Next }}
+        <div class="mcol c6">
+          <header>Next Article</header>
+          {{ .Render "li_sm" }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  <div class="mcol c12">
+    {{ partial "sidebar.html" . }}
+  </div>
+</div>
+{{ end }}

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -e
+
+hugo --theme=toorop.fr
+
+rsync -avz --del public/* root@toorop.fr:/var/www/toorop.fr/

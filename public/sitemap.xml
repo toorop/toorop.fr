@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://toorop.fr/plog/mon-blog-est-mort-vive-mon-blog/</loc>
+    <lastmod>2017-06-06T11:32:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://toorop.fr/tags/admin/</loc>
+    <lastmod>2017-06-06T11:32:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://toorop.fr/categories/blog/</loc>
+    <lastmod>2017-06-06T11:32:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://toorop.fr/categories/</loc>
+    <lastmod>2017-06-06T11:32:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://toorop.fr/tags/dev/</loc>
+    <lastmod>2017-06-06T11:32:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://toorop.fr/categories/plog/</loc>
+    <lastmod>2017-06-06T11:32:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://toorop.fr/plog/</loc>
+    <lastmod>2017-06-06T11:32:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://toorop.fr/tags/</loc>
+    <lastmod>2017-06-06T11:32:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://toorop.fr/</loc>
+    <lastmod>2017-06-06T11:32:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
