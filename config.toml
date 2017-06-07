@@ -5,8 +5,8 @@ disqusShortname = "toorop"
 copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
 
 [author]
-    name = "Stéphane Depierrepont"
-    email = "toorop@gmail.com"
+name = "Stéphane Depierrepont"
+email = "toorop@gmail.com"
 
 [params]
 contact = "toorop@gmail.com"
