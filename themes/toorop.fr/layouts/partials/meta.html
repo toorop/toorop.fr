@@ -1,12 +1,34 @@
 <meta charset="utf-8">
 <meta name="pinterest" content="nopin">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="theme-color" content="#263238">
 {{ with .Site.Params.contact }}<meta name="contact" content="{{ . }}">{{ end }}
-{{ .Hugo.Generator }}
-
 <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}images/logo.png">
 {{ with .RSSLink }}<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ . }}">{{ end }}
-
 <link rel="canonical" href="{{ .Permalink }}">
-
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:url" content="{{ .Permalink }}">
+{{ if .IsPage }}
+<meta property="og:type" content="article">
+<meta property="og:article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+{{ range .Params.tags }}
+<meta property="og:article:tag" content="{{ . }}">
+{{ end }}
+<meta property="og:title" content="{{ .Title }} - {{ .Title }}">
+<meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.thumbnail | default "images/default.png" }}">
+<meta property="og:description" content="{{ replaceRE "\n" "" (.Description | default .Summary) }}">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="{{ .Site.Title }}">
+<meta name="twitter:url" content="{{ .Permalink }}">
+<meta name="twitter:title" content="{{ .Title }} - {{ .Site.Title }}">
+<meta name="twitter:description" content="{{ replaceRE "\n" "" (.Description | default .Summary) }}">
+<meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.thumbnail | default "images/default.png" }}">
+{{ else }}
+<meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
+<meta property="og:type" content="website">
+{{ end }}
+{{ if .IsPage }}
+<meta name="description" content="{{ replaceRE "\n" "" (.Description | default .Summary) }}">
+{{ else }}
+<meta name="description" content="{{ .Site.Params.Description }}">
+{{ end }}
