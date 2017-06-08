@@ -3,6 +3,7 @@ languageCode = "fr-FR"
 title = "Toorop blog"
 disqusShortname = "toorop"
 copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
+googleAnalytics = "UA-27768590-1"
 
 [author]
 name = "Stéphane Depierrepont"
