@@ -21,13 +21,12 @@ Aujourd'hui je vous propose une courte introduction à <a href="https://restic.g
 Dans ce qui suit je vais utiliser ce que j'ai sous la main, autrement dit mon poste de travail sous Ubuntu. Pour autant Restic étant multiplateforme ça ne devrait pas trop différer si vous utilisez un autre OS. (d'autant plus qu'il m'a semblé entendre qu'il y avait maintenant un vrai shell sous windows !!).
 
 # Preambule
-Restic est compatible avec de nombreux sytéme de stockage, si j'ai choisi <a href="https://www.ovh.com/fr/public-cloud/storage/object-storage/" target="_blank" alt="public object storage ovh swift">l'Object Storage d'OVH</a> c'est essentiellement par que je l'utilise déja pour d'autres projets et le coût est trés compétitif: 1 centime d'euro pas mois par Go stocké, plus les transferts (aux mêmes tarifs). 
+Restic est compatible avec de nombreux sytémes de stockage, si j'ai choisi <a href="https://www.ovh.com/fr/public-cloud/storage/object-storage/" target="_blank" alt="public object storage ovh swift">l'Object Storage d'OVH</a> c'est essentiellement par que je l'utilise déja pour d'autres projets et que le coût est trés compétitif: 1 centime d'euro pas mois par Go stocké, plus les transferts (aux mêmes tarifs). 
 
-En passant, j'en vois qui se jettent sur les offres de **stockage illimitées dans le cloud**, sans parler du fait que l'illimité n'est qu'un concept marketing pour vous transformer en clients, posez vous simplement cette question:
+En passant, j'en vois qui se jettent sur les offres de **stockage illimitées dans le cloud**, sans parler du fait que l'illimité n'est qu'un concept marketing pour vous transformer en clients, et une fois que c'est fait les limites apparaissent, posez vous simplement cette question:
 
-* je paierai combien sur l'object storage OVH ?
+* je paierai combien sur l'object storage OVH pour stocker ce que je stocke actuellement ?
 
-Par exemple avec 50 Euros mensuels vous pouvez stocker 50 * 100 = 5000 Go soit 5 To de données chez OVH... Vous les utilisez chez votre presta *illimité* qui vous facture ce tarif ? Si oui quelles sont les limites d'usage ? (bon ok ok je ne compte pas les transferts, mais bon... ;)
 
 # Quelles sont les spécificités de Restic ?
 

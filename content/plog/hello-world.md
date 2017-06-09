@@ -14,18 +14,7 @@ Le pire ne décevant jamais les différentes sauvegardes que j'avais faites, ét
 <!--more-->  
 Je ne rentre pas dans les détails, si la petite histoire vous intéresse je vous invite à écouter l'épisode de l'instant T consacré à ce drame:
 
-<div class="player">
-    <audio controls preload="none">
-        <!-- Audio files -->
-        <source src="http://api.spreaker.com/download/episode/12044770/mon_blog_est_mort_vive_mon_blog.mp3" type="audio/mp3">
-        <!-- Fallback for browsers that don't support the <audio> element -->
-        <div>
-            <a href="http://api.spreaker.com/download/episode/12044770/mon_blog_est_mort_vive_mon_blog.mp3">Votre navigateur ne supporte pas la lecture du fichier audio. Cliquez ici pour télécharger l'épisode.</a>
-        </div>
-    </audio>
-</div>
-
-Puisque l'on en parle, si vous souhaitez suivre mes aventures trépidantes en audio, vous pouvez vous abonner à mon podcast | streetcast | plog : l'instant T disponible à cette adresse <a href="http://feeds.feedburner.com/InstantT" target="_blank">http://feeds.feedburner.com/InstantT</a>
+{{% audioplayer "https://api.spreaker.com/download/episode/12044770/mon_blog_est_mort_vive_mon_blog.mp3" %}}
 
 Comme vous pouvez le constater, puisque vous êtes ici, pour cette renaissance j'ai changé de moteur de blog, pour utiliser <a href="https://gohugo.io/" target="_blank">Hugo</a> plutôt que <a href="https://fr.wordpress.org/" target="_blank">Worpdress</a>.
 

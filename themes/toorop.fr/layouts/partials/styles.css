@@ -690,3 +690,10 @@ section.footer>header a {
 }
 {{ end }}
 {{ end }}
+
+.podcast-subscribe {
+    margin-top: 6px;
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+}

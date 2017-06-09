@@ -1,0 +1,14 @@
+<div class="player">
+    <audio controls preload="none">
+        <!-- Audio files -->
+        <source src="{{ index .Params 0 }}" type="audio/mp3">
+        <!-- Fallback for browsers that don't support the <audio> element -->
+        <div>
+            <a href="{{ index .Params 0 }}">Votre navigateur ne supporte pas la lecture du fichier audio. Cliquez ici pour télécharger l'épisode.</a>
+        </div>
+    </audio>
+</div>
+<div class="podcast-subscribe">
+Pour suivre mes aventures trépidantes en audio,
+<a href="http://feeds.feedburner.com/InstantT" title="Abonnez vous au podcast de Stéphane Depierrepont aka tootop: l'Instant T'" target="_blank">abonnez vous à mon podcast "l'instant T"</a>
+</div>

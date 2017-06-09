@@ -10,6 +10,9 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <title>{{ block "title" . }}{{ end }}{{ .Site.Title }}</title>
+    {{ if eq .Section "plog" }}
+    <link rel="stylesheet" href="https://cdn.plyr.io/2.0.13/plyr.css">
+    {{ end }}
     {{ block "meta" . }}{{ end }}
     <style>
       {{ replaceRE " +" " " (replaceRE "\n" "" (partial "styles.css" .)) | safeCSS }}
@@ -50,5 +53,11 @@
     </footer>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+    {{ if eq .Section "plog" }}
+    <script src="https://cdn.plyr.io/2.0.13/plyr.js"></script>
+    <script>
+    var player = plyr.setup();
+   </script>
+    {{ end }}
   </body>
 </html>
