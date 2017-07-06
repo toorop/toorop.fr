@@ -3,7 +3,7 @@ categories = ["galerie","photo"]
 date = "2017-06-22T17:34:24+02:00"
 draft = false
 slug = "photo-fete-musique-2017"
-tags = ["street photo"]
+tags = ["street photography"]
 thumbnail = "images/5/4.jpg"
 title = "Photos de la fête de la musique 2017 à Albi"
 toc = true
@@ -32,3 +32,8 @@ Dans la soirée je suis parti avec le minimum de matos, le Sony A7 II et un seul
 ![photo fete musique Albi](/images/5/7.jpg#center)
 
 Voila, n'hésitez pas à laisser un commentaire ;)
+
+
+https://plik.root.gg/file/nhAGjP75oo3tlKpq/pECrNjas0dm084bJ/DSC00331.jpg
+https://plik.root.gg/file/nhAGjP75oo3tlKpq/Fab3kKfEKoeqFoGc/DSC00326-Modifier.jpg
+https://plik.root.gg/file/nhAGjP75oo3tlKpq/obg3Emp8eJCjGLCC/DSC00319.jpg
