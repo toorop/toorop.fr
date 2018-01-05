@@ -9,7 +9,26 @@ title = "Vos mails vers OVH n'aboutissent pas si vous utilisez un VPN ?"
 toc = true
 +++
 
+
+
 **tl;dr** : si vous envoyez des mails vers OVH depuis un poste qui est derrière un VPN il y a de fortes chances pour que vos mails soient, au mieux classifiés comme spams, au pire dropés.
+
+**UDATE 05 janvier 2018**
+
+Suite à la publication de ce billet sur Twitter le support OVH à fait remonter le problème aux équipes concernées:
+
+<div align="center">
+<blockquote class="twitter-tweet" data-lang="fr"><p lang="fr" dir="ltr">Bjr. Intéressant effectivement, j&#39;ai remonté aux admins pour vérifications. Merci. Cdlt, ^ThoT</p>&mdash; OVH Support FR (@ovh_support_fr) <a href="https://twitter.com/ovh_support_fr/status/948564866276585472?ref_src=twsrc%5Etfw">3 janvier 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+Ce matin j'ai refait deux tests, un vers une des mailing OVH (sd-pro) et l'autre vers une adrsse hébergée sur leur plateforme mutualisée, il semblerait que le problème n'est plus d'actualité puisque les deux mails sont arrivés.
+
+Le *spamcause* de ces mails sont identiques et ne montrent aucun probleme:
+
+```Vade Retro 01.401.76#118 AS+AV+AP+RT Profile: OVH|dp|CHECKCE; Bailout: 300;```
+
+**Billet original**
 
 Comme je ne sais pas trop où remonter le problème, je le pose ici en espérant que ça remonte aux personnes concernées.
 
