@@ -1,7 +1,7 @@
 +++
 draft = true
 title = ""
-date: {{ .Date }}
+date = {{ .Date }}
 slug = ""
 tags = []
 categories = []
