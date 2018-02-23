@@ -121,7 +121,7 @@ Ce que je vous propose c'est de coder la fonction et ensuite je vous l'explique.
 
 .... alors je peux répondre à la question précédente, oui on peut importer des packages. Heureusement d'ailleurs.
 
-Voici le code complet de notre fonction avec le commentaires pour vous permettre de suivre le déroulement:
+Voici le code de notre fonction avec le commentaires pour vous permettre de suivre le déroulement:
 
 ```go
 package main
@@ -211,6 +211,7 @@ func Thumb(event event.Event) (string, error) {
 }
 ```
 
+Il est aussi disponible sur [github](https://github.com/toorop/ovh-functions-tuto)
 
 ## On déploie la fonction
 
