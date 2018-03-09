@@ -12,6 +12,7 @@ email = "toorop@gmail.com"
 [params]
 contact = "toorop@gmail.com"
 description = "Blog personnel de Stéphane depierrepont aka Toorop"
+paginate = 9
 
 # Fonts settings.
 googlefonts = "https://fonts.googleapis.com/css?family=Lobster|Lato:400,700" # Optional, Include google fonts.

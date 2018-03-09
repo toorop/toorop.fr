@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ⚡>
+<html>
   <head>
     {{ partial "meta.html" . }}
 
@@ -12,7 +12,7 @@
     {{ else }}
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
     {{ end }}
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <title>{{ block "title" . }}{{ end }}{{ .Site.Title }}</title>
     {{ block "meta" . }}{{ end }}
     <style amp-custom>
@@ -33,15 +33,17 @@
 
     <header class="l-header">
       <div class="l-container">
-        <div class="logo">
-          <a href="{{ .Site.BaseURL }}"><i class="fa fa-home" aria-hidden="true"></i></a>  
-          <a class="right" href="/index.xml" title="Flux RSS de Stéphane Depierrepont"><i class="fa fa-rss" aria-hidden="true"></i></a> 
-          <a class="right" href="https://feeds.feedburner.com/InstantT" title="Abonnez vous au podcast de Stéphane Depierrepont" target="_blank"><i class="fa fa-podcast" aria-hidden="true"></i></a>          
-          <a class="right" href="https://500px.com/toorop" title="Suivez Stéphane Depierrepont sur 500px" target="_blank"><i class="fa fa-500px" aria-hidden="true"></i></a> 
-          <a class="right" href="https://www.flickr.com/photos/toorop" title="Suivez Stéphane Depierrepont sur Flickr" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></i></a> 
-          <a class="right" href="https://github.com/toorop" title="Suivez Stéphane Depierrepont sur Github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-          <a class="right" href="https://twitter.com/poroot" title="Suivez Stéphane Depierrepont sur Twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>          
-      </div>
+          <div class="logo">
+              <a href="{{ .Site.BaseURL }}"><i class="fa fa-home" aria-hidden="true"></i></a>
+              <a class="right" href="/index.xml" title="Flux RSS de Stéphane Depierrepont"><i class="fa fa-rss" aria-hidden="true"></i></a>
+              <a class="right" href="https://feeds.feedburner.com/InstantT" title="Abonnez vous au podcast de Stéphane Depierrepont" target="_blank"><i class="fa fa-podcast" aria-hidden="true"></i></a>
+              <a class="right" href="https://500px.com/toorop" title="Suivez Stéphane Depierrepont sur 500px" target="_blank"><i class="fab fa-500px" aria-hidden="true"></i></a>
+              <a class="right" href="https://www.flickr.com/photos/toorop" title="Suivez Stéphane Depierrepont sur Flickr" target="_blank"><i class="fab fa-flickr" aria-hidden="true"></i></i></a>
+              <a class="right" href="https://github.com/toorop" title="Suivez Stéphane Depierrepont sur Github" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+              <a class="right" href="https://www.linkedin.com/in/st%C3%A9phane-depierrepont-69209491/" title="Stéphane Depierrepont sur linkedin" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+              <a class="right" href="https://discord.toorop.fr" title="Rejoignez nous sur discord" target="_blank"><i class="fab fa-discord" aria-hidden="true"></i></a>
+              <a class="right" href="https://twitter.com/poroot" title="Suivez Stéphane Depierrepont sur Twitter" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          </div>
     </header>
 
     <main>

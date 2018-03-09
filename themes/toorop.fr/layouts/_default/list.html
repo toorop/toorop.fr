@@ -2,26 +2,30 @@
 
 {{ define "main" }}
 <div class="mrow">
-  <div class="mcol c8">
-
+  <div class="mcol c12">
     {{ if not .IsHome }}
     <header class="page-title">
       <h1 class="title">{{ .Title }}</h1>
     </header>
     {{ end }}
-
     <div class="articles">
       <div class="mrow">
         {{ range (.Paginate .Data.Pages).Pages }}
-        <div class="mcol c6">{{ .Render "li" }}</div>
+        <div class="mcol c4">{{ .Render "li" }}</div>
         {{ end }}
       </div>
     </div>
-
     {{ partial "pagination.html" . }}
-  </div>
-  <div class="mcol c4">
-    {{ partial "sidebar.html" . }}
+    {{ range $key, $value := .Site.Taxonomies }}
+    <section class="sidebar">
+      <header>{{ $key | upper }}</header>
+      <div>
+        <ul class="terms">
+          {{ range first 40 $value.ByCount }}<li><a href="{{ $.Site.BaseURL}}{{ $key }}/{{ .Name | urlize }}">{{ .Name }}</a></li>{{ end }}
+        </ul>
+      </div>
+    </section>
+    {{ end }}
   </div>
 </div>
 {{ end }}

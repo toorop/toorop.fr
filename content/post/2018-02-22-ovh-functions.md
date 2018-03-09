@@ -272,7 +272,7 @@ Qu'est ce qui saute aux yeux ? La diference dans le temps d'execution entre le p
 ## Conclusion
 Je ne vais pas donner mon avis sur le service OVH mais sur les **Functions As A Service**.
 
-Les points positifs je les ai décris plus haut, si je devais ne retenir qu'un point négatif ce serait les limitations de notre champ d'action sur le processus HTTP. Ce que je veux dire c'est que j'aurais aimé avoir accées à la requète HTTP et à la reponse HTTP dans ma fonction. En gros que la signature soit celle d'un handler HTTP complet, par exemple en Go:
+Les points positifs je les ai décris plus haut, si je devais ne retenir qu'un point négatif ce serait les limitations de notre champ d'action sur le processus HTTP. Ce que je veux dire c'est que j'aurais aimé avoir accès à la requète HTTP et à la reponse HTTP dans ma fonction. En gros que la signature soit celle d'un handler HTTP complet, par exemple en Go:
 
 ``` func faas(w http.ResponseWriter, r *http.Request) error ```
 
